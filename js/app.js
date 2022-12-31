@@ -1,9 +1,10 @@
-//GET TYPEOF VALUE
-let a = prompt('Enter first Number:');
+//get nth character of a string
+let a = prompt('Enter a String:');
+let n = Number(prompt('Enter n value: '));
 
 let p = document.querySelector('.demo');
 let btn = document.querySelector('#btn');
 
 btn.addEventListener('click', () => {
-    p.textContent = typeof a;
+    p.textContent = a[n-1];
 })
