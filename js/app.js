@@ -5,5 +5,6 @@ let p = document.querySelector('.demo');
 let btn = document.querySelector('#btn');
 
 btn.addEventListener('click', () => {
-    p.textContent = `Sum of two number is: ${a + b}`;
+    let result = (a === b) ? 'a and b are equal' : 'a and b are not equal';
+    p.textContent = result;
 })
